@@ -1,0 +1,10 @@
+.content-img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

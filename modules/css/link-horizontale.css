@@ -1,0 +1,52 @@
+.container-content-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.container-content-row .content-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 3em;
+    color: white;
+    background-color: #FFDC00;
+}
+
+.container-content-row .content-row:nth-child(2n) {
+    background-color: #0083C1;
+}
+
+.container-content-row .content-row img {
+    margin-right: 15px;
+}
+
+.container-content-row .content-row div .title {
+    font-family: "Klein Black";
+    font-family: "Klein Regular";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+.container-content-row .content-row div .description {
+    font-family: "Klein Regular";
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.container-content-row .content-row a {
+    margin-left: 15px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.container-content-row .content-row a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
