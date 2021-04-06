@@ -437,15 +437,21 @@ nav.navbar a.active {
 
 .container-text-image .side-text {
     position: relative;
+    overflow: hidden;
     width: 100%;
     background-color: #001198;
 }
 
-.container-text-image .side-text:before {
-    content: "";
+.container-text-image .side-text.bg-bottom-right:before {
+    content: " ";
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 100%;
+    height: 100%;
     background-image: url(./images/bgsygle.png);
     background-repeat: no-repeat;
-  }
+}
 
 .container-text-image .side-text .title {
     font-family: "Klein Black";
@@ -465,6 +471,12 @@ nav.navbar a.active {
     line-height: 1.5em;
     color: #ffffff;
 }
+
+/* .container-text-image .side-text img.bottom-right-corner {
+    position: absolute;
+    bottom: -35%;
+    right: -40%;
+} */
 
 .container-text-image .side-img {
     overflow: hidden;
@@ -613,5 +625,9 @@ footer .footer-bottom {
     .container-text-image,
     .content-row {
         flex-direction: column;
+    }
+
+    .side-text::before {
+        background: none;
     }
 }
