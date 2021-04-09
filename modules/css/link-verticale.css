@@ -10,8 +10,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 100%;
-    padding: 3em;
+    width: calc(100% - 96px);
+    padding: 48px;
     color: white;
 }
 
@@ -49,4 +49,10 @@
 .container-content-column .content-column a:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 720px) {
+    .container-content-column {
+        flex-direction: column;
+    }
 }

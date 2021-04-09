@@ -9,8 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
-    padding: 3em;
+    width: calc(100% - 96px);
+    padding: 48px;
     color: white;
     background-color: #FFDC00;
 }
@@ -28,14 +28,12 @@
     font-family: "Klein Regular";
     font-size: 1.5em;
     text-transform: uppercase;
-    margin: 0;
     margin-bottom: 0.3em;
 }
 
 .container-content-row .content-row div .description {
     font-family: "Klein Regular";
     font-size: 1.4em;
-    margin: 0;
 }
 
 .container-content-row .content-row a {
@@ -49,4 +47,11 @@
 .container-content-row .content-row a:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 720px) {
+    .container-content-row,
+    .content-row {
+        flex-direction: column;
+    }
 }

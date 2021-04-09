@@ -1,0 +1,23 @@
+.content-toggle {
+    background-color: #FFDC00;
+    padding: 40px;
+}
+
+.content-toggle .title {
+    position: relative;
+    font-family: "Klein Black";
+    font-size: 2em;
+    padding-top: 10px;
+    padding-left: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.content-toggle .title:before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 49px;
+    height: 49px;
+    background-image: url(./images/toggle.png);
+}
